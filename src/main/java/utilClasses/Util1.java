@@ -12,6 +12,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -63,7 +64,13 @@ public class Util1 {
 		
 		return path;
 	} 
+
 	
+	public static void moveToElement(WebDriver driver,WebElement element) {
+		Actions act =new Actions(driver);
+		act.moveToElement(element);
+		
+	}
 	
 	
 	
