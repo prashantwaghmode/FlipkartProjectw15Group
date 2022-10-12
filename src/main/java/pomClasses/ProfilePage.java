@@ -61,6 +61,7 @@ WebDriver driver;
 	}
 	
 	public void clickOnManageAddress() {
+		
 		manageAddressText.click();
 	}
 	
